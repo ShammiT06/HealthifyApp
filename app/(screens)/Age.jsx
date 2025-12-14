@@ -4,7 +4,7 @@ import React from 'react'
 export default function Age() {
   return (
     <View>
-      <Text>Age</Text>
+      <Text>Ages</Text>
     </View>
   )
 }

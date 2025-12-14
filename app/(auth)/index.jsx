@@ -20,12 +20,13 @@ export default function Index() {
 
   const login = () => {
     if (!email || !password) {
-      Alert.alert("Error", "All fields are required");
+      Alert.alert("Info", "All fields are required");
       return;
     }
-
-    // TEMP: replace with API call
-    Alert.alert("Success", "Login successful");
+    Alert.alert("Success", "Login successful")
+    setTimeout(()=>{
+      router.push("/(screens)")
+    },2000)
   };
 
   return (
@@ -35,7 +36,7 @@ export default function Index() {
         style={styles.bg}
         resizeMode="cover"
       >
-        {/* HEADER */}
+    
         <View style={styles.header}>
           <Text style={styles.headerTxt}>
             Sign in to your {"\n"} Account
@@ -45,22 +46,22 @@ export default function Index() {
           </Text>
         </View>
 
-        {/* CARD */}
+
         <View style={styles.card}>
-          {/* GOOGLE */}
+
           <TouchableOpacity style={styles.googleBtn}>
             <Ionicons name="logo-google" size={20} color="#EA4335" />
             <Text style={styles.googleTxt}>Continue with Google</Text>
           </TouchableOpacity>
 
-          {/* DIVIDER */}
+
           <View style={styles.dividerRow}>
             <View style={styles.line} />
             <Text style={styles.orTxt}>Or login with</Text>
             <View style={styles.line} />
           </View>
 
-          {/* EMAIL */}
+
           <View style={styles.inputBox}>
             <Ionicons name="mail-outline" size={20} color="#666" />
             <TextInput
@@ -73,8 +74,6 @@ export default function Index() {
               onChangeText={setEmail}
             />
           </View>
-
-          {/* PASSWORD */}
           <View style={styles.inputBox}>
             <Ionicons name="lock-closed-outline" size={20} color="#666" />
             <TextInput
@@ -94,7 +93,6 @@ export default function Index() {
             </TouchableOpacity>
           </View>
 
-          {/* REMEMBER + FORGOT */}
           <View style={styles.rowBetween}>
             <TouchableOpacity
               style={styles.remember}
@@ -113,12 +111,12 @@ export default function Index() {
             </TouchableOpacity>
           </View>
 
-          {/* LOGIN */}
+          
           <TouchableOpacity style={styles.loginBtn} onPress={login}>
             <Text style={styles.loginTxt}>Log In</Text>
           </TouchableOpacity>
 
-          {/* SIGNUP */}
+
           <Text style={styles.signupTxt}>
             Don’t have an account?{" "}
             <Text style={styles.signupLink} onPress={navigate}>
