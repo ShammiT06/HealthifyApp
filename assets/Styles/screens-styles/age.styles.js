@@ -1,7 +1,7 @@
 import { StyleSheet, Dimensions } from "react-native";
 
 const { width } = Dimensions.get("window");
-const CIRCLE_SIZE = width * 0.45;
+const CIRCLE_SIZE = width * 0.39;
 
 const Styles = StyleSheet.create({
     view: {
@@ -43,7 +43,7 @@ const Styles = StyleSheet.create({
         borderRadius: CIRCLE_SIZE / 2,
         justifyContent: "center",
         alignItems: "center",
-        marginTop: width * 0.08,
+        marginTop: width * 0.055,
     },
 
     activeCircle: {
@@ -58,7 +58,7 @@ const Styles = StyleSheet.create({
 
     genderText: {
         marginTop: 12,
-        fontSize: width * 0.045,
+        fontSize: width * 0.054,
         fontWeight: "600",
     },
     confmBtn: {

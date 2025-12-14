@@ -14,7 +14,7 @@ export default function Index() {
                 <View style={Styles.headerCont}>
                     <Text style={Styles.Header}>What’s Your Gender</Text>
                     <Text style={Styles.subText}>
-                        Select your gender to personalize your experience
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere ex atque cumque voluptas quisquam soluta cupiditate ratione libero animi nobis.
                     </Text>
                 </View>
                 <View style={Styles.genderContainer}>
